@@ -13,7 +13,7 @@ export const useLogin = () => {
             method: 'POST',
             headers: { 
                 'Content-type': 'application/json',
-                'Access-Control-Allow-Origin': 'https://tman.vercel.app'
+                'Access-Control-Allow-Origin': '*'
              },
             body: JSON.stringify({ email, password })
         });
