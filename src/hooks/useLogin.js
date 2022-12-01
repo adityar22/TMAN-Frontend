@@ -11,7 +11,10 @@ export const useLogin = () => {
 
         const response = await fetch(url, {
             method: 'POST',
-            headers: { 'Content-type': 'application/json' },
+            headers: { 
+                'Content-type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://tman.vercel.app'
+             },
             body: JSON.stringify({ email, password })
         });
 
